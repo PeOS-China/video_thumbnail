@@ -22,6 +22,9 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    namespace 'ai.dongmi.video_thumbnail'
+    testNamespace 'ai.dongmi.video_thumbnail.test'
+    
     compileSdkVersion 33
 
     defaultConfig {
