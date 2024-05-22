@@ -22,8 +22,9 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace 'ai.dongmi.video_thumbnail'
-    testNamespace 'ai.dongmi.video_thumbnail.test'
+    if (project.android.hasProperty("namespace")) {
+        namespace 'xyz.justsoft.video_thumbnail'
+    }
     
     compileSdkVersion 33
 
